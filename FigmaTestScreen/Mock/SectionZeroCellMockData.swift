@@ -9,12 +9,12 @@
 import Foundation
 
 struct SectionZeroCellMockData {
-    let dict = [0: HealthDataSectionZeroCollectionViewCellData(labelText: "Activity", backgroundImage: "bg_activity"),
-                1: HealthDataSectionZeroCollectionViewCellData(labelText: "Mindfulness", backgroundImage: "bg_mindfulness"),
-                2: HealthDataSectionZeroCollectionViewCellData(labelText: "Nutrition", backgroundImage: "bg_nutrition"),
-                3: HealthDataSectionZeroCollectionViewCellData(labelText: "Sleep", backgroundImage: "bg_sleep")]
+    let dict = [0: HealthDataSectionZeroCellData(labelText: "Activity", backgroundImage: "bg_activity"),
+                1: HealthDataSectionZeroCellData(labelText: "Mindfulness", backgroundImage: "bg_mindfulness"),
+                2: HealthDataSectionZeroCellData(labelText: "Nutrition", backgroundImage: "bg_nutrition"),
+                3: HealthDataSectionZeroCellData(labelText: "Sleep", backgroundImage: "bg_sleep")]
     
-    var data = [HealthDataSectionZeroCollectionViewCellData]()
+    var data = [HealthDataSectionZeroCellData]()
     
     init() {
         for key in dict.keys {

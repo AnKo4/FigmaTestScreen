@@ -10,4 +10,5 @@ import Foundation
 
 class HealthDataViewModel {
     let sectionZeroData = SectionZeroCellMockData().data
+    let sectionOneData = SectionOneCellMockData().data
 }

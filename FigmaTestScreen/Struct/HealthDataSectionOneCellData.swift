@@ -1,5 +1,5 @@
 //
-//  HealthDataSectionZeroCollectionViewCellData.swift
+//  HealthDataSectionOneCellData.swift
 //  FigmaTestScreen
 //
 //  Created by Andrey on 07/10/2019.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct HealthDataSectionZeroCollectionViewCellData {
+struct HealthDataSectionOneCellData {
     var labelText = String()
-    var backgroundImage = String()
+    var iconImage = String()
 }

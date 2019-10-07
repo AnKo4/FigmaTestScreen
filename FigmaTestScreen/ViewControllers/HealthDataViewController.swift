@@ -12,9 +12,10 @@ class HealthDataViewController: UIViewController {
 
     @IBOutlet private weak var collectionView: UICollectionView!
     
+
     let viewModel = HealthDataViewModel()
     
-    let edgeInsets = UIEdgeInsets(top: CGFloat(8), left: CGFloat(8), bottom: CGFloat(8), right: CGFloat(8))
+    let edgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
     let interitemSpacing = CGFloat(8)
     let lineSpacing = CGFloat(8)
     
@@ -26,14 +27,20 @@ class HealthDataViewController: UIViewController {
     }
     
     func setupUI() {
-        print(UIScreen.main.bounds.width / 2 - edgeInsets.left)
+        let buttonItem = UIBarButtonItem(image: UIImage(named: "ic_profile"), style: .plain , target: nil, action: nil)
+        navigationItem.rightBarButtonItem = buttonItem
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "SectionZeroCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "sectionZeroCell")
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "sectionOneCell")
+        collectionView.register(UINib(nibName: "SectionOneCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "sectionOneCell")
      }
-
-  
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        let indexSet = IndexSet(integer: 0)
+//        collectionView.reloadSections(indexSet)
+//    }
+    
 }
 
 extension HealthDataViewController: UICollectionViewDataSource {
@@ -56,7 +63,8 @@ extension HealthDataViewController: UICollectionViewDataSource {
             cell.setupCellContent(data: viewModel.sectionZeroData[indexPath.row])
             return cell
         case 1:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sectionOneCell", for: indexPath)
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sectionOneCell", for: indexPath) as? SectionOneCollectionViewCell else { return UICollectionViewCell() }
+            cell.setupCellContent(data: viewModel.sectionOneData[indexPath.row])
             return cell
         default: return UICollectionViewCell()
         }
@@ -85,13 +93,14 @@ extension HealthDataViewController: UICollectionViewDelegateFlowLayout {
         case 0: return edgeInsets
         default: return UIEdgeInsets.zero
         }
-        
+
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return interitemSpacing
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return lineSpacing
     }

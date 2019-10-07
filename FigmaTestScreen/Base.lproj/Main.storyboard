@@ -11,11 +11,19 @@
         <scene sceneID="f3D-Xr-Ggx">
             <objects>
                 <navigationController id="8sG-kS-pHx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Health Data" id="Lxf-fl-xU2"/>
+                    <tabBarItem key="tabBarItem" title="Health Data" image="ic_tab_health_data" id="Lxf-fl-xU2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="n8C-Se-c7m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.73725490199999999" green="0.73333333329999995" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="1" green="0.1764705882352941" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="34"/>
+                        </textAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YpC-gu-x3t">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="op1-oe-1To" kind="relationship" relationship="rootViewController" id="mMi-IY-LHi"/>
                     </connections>
@@ -32,10 +40,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6hv-2k-IbF">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hv-2k-IbF">
                                 <rect key="frame" x="0.0" y="96" width="414" height="591"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XrC-Ad-xXy">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="MfR-Jc-g84">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -44,7 +52,7 @@
                                 <cells/>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="0.82155039612676062" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.73725490196078436" green="0.73333333333333328" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Jeo-um-md1" firstAttribute="bottom" secondItem="6hv-2k-IbF" secondAttribute="bottom" id="4or-jZ-bxk"/>
                             <constraint firstItem="6hv-2k-IbF" firstAttribute="leading" secondItem="Jeo-um-md1" secondAttribute="leading" id="MQD-Av-Fby"/>
@@ -56,7 +64,7 @@
                     <tabBarItem key="tabBarItem" title="Health Data" id="Isg-Ha-tSo"/>
                     <navigationItem key="navigationItem" title="Memories" id="tAr-Qe-zwM"/>
                     <connections>
-                        <outlet property="collectionView" destination="6hv-2k-IbF" id="EFA-2G-1ge"/>
+                        <outlet property="collectionView" destination="6hv-2k-IbF" id="if7-9E-sY0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEy-1Q-goD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -73,7 +81,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="igG-Lm-Jux"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Today" id="hD4-CZ-9QY"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="ic_tab_today" id="hD4-CZ-9QY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CfX-FO-f33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +94,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vgV-v9-L1A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.81999999999999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="0.81999999999999995" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="selectedImageTintColor" red="1" green="0.1764705882352941" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
@@ -110,7 +118,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="WF3-eA-V1W"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sources" id="Zfn-tt-pNn"/>
+                    <tabBarItem key="tabBarItem" title="Sources" image="ic_tab_sources" id="Zfn-tt-pNn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1q-he-Du1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,11 +134,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gq3-aj-tT7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Medical ID" id="TUL-Ss-Adc"/>
+                    <tabBarItem key="tabBarItem" title="Medical ID" image="ic_tab_medical_id" id="TUL-Ss-Adc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNo-bb-HEL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="654" y="955"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_tab_health_data" width="22" height="22"/>
+        <image name="ic_tab_medical_id" width="24" height="25"/>
+        <image name="ic_tab_sources" width="25.333333969116211" height="25.333333969116211"/>
+        <image name="ic_tab_today" width="23.333333969116211" height="22.666666030883789"/>
+    </resources>
 </document>

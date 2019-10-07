@@ -16,11 +16,15 @@
 		55BBD5812347382700C80DED /* HealthDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD5802347382700C80DED /* HealthDataViewController.swift */; };
 		55BBD586234763AA00C80DED /* SectionZeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD584234763AA00C80DED /* SectionZeroCollectionViewCell.swift */; };
 		55BBD587234763AA00C80DED /* SectionZeroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55BBD585234763AA00C80DED /* SectionZeroCollectionViewCell.xib */; };
-		55BBD58A234774C800C80DED /* HealthDataSectionZeroCollectionViewCellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD589234774C800C80DED /* HealthDataSectionZeroCollectionViewCellSize.swift */; };
+		55BBD58A234774C800C80DED /* HealthDataSectionZeroCellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD589234774C800C80DED /* HealthDataSectionZeroCellSize.swift */; };
 		55ED5B8B234B1AC900FBFB32 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55ED5B8A234B1A7500FBFB32 /* Roboto-Regular.ttf */; };
-		55ED5B8E234B1F3C00FBFB32 /* HealthDataSectionZeroCollectionViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5B8D234B1F3C00FBFB32 /* HealthDataSectionZeroCollectionViewCellData.swift */; };
+		55ED5B8E234B1F3C00FBFB32 /* HealthDataSectionZeroCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5B8D234B1F3C00FBFB32 /* HealthDataSectionZeroCellData.swift */; };
 		55ED5B91234B203C00FBFB32 /* SectionZeroCellMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5B90234B203C00FBFB32 /* SectionZeroCellMockData.swift */; };
 		55ED5B94234B227E00FBFB32 /* HealthDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5B93234B227E00FBFB32 /* HealthDataViewModel.swift */; };
+		55ED5B97234B58AE00FBFB32 /* SectionOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5B95234B58AE00FBFB32 /* SectionOneCollectionViewCell.swift */; };
+		55ED5B98234B58AE00FBFB32 /* SectionOneCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55ED5B96234B58AE00FBFB32 /* SectionOneCollectionViewCell.xib */; };
+		55ED5B9A234B60D300FBFB32 /* SectionOneCellMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5B99234B60D300FBFB32 /* SectionOneCellMockData.swift */; };
+		55ED5B9C234B61BE00FBFB32 /* HealthDataSectionOneCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED5B9B234B61BE00FBFB32 /* HealthDataSectionOneCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +39,15 @@
 		55BBD5802347382700C80DED /* HealthDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataViewController.swift; sourceTree = "<group>"; };
 		55BBD584234763AA00C80DED /* SectionZeroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionZeroCollectionViewCell.swift; sourceTree = "<group>"; };
 		55BBD585234763AA00C80DED /* SectionZeroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionZeroCollectionViewCell.xib; sourceTree = "<group>"; };
-		55BBD589234774C800C80DED /* HealthDataSectionZeroCollectionViewCellSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataSectionZeroCollectionViewCellSize.swift; sourceTree = "<group>"; };
+		55BBD589234774C800C80DED /* HealthDataSectionZeroCellSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataSectionZeroCellSize.swift; sourceTree = "<group>"; };
 		55ED5B8A234B1A7500FBFB32 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../../../../Library/Fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		55ED5B8D234B1F3C00FBFB32 /* HealthDataSectionZeroCollectionViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataSectionZeroCollectionViewCellData.swift; sourceTree = "<group>"; };
+		55ED5B8D234B1F3C00FBFB32 /* HealthDataSectionZeroCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataSectionZeroCellData.swift; sourceTree = "<group>"; };
 		55ED5B90234B203C00FBFB32 /* SectionZeroCellMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionZeroCellMockData.swift; sourceTree = "<group>"; };
 		55ED5B93234B227E00FBFB32 /* HealthDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataViewModel.swift; sourceTree = "<group>"; };
+		55ED5B95234B58AE00FBFB32 /* SectionOneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOneCollectionViewCell.swift; sourceTree = "<group>"; };
+		55ED5B96234B58AE00FBFB32 /* SectionOneCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionOneCollectionViewCell.xib; sourceTree = "<group>"; };
+		55ED5B99234B60D300FBFB32 /* SectionOneCellMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOneCellMockData.swift; sourceTree = "<group>"; };
+		55ED5B9B234B61BE00FBFB32 /* HealthDataSectionOneCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataSectionOneCellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		55BBD5822347637100C80DED /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				55ED5B96234B58AE00FBFB32 /* SectionOneCollectionViewCell.xib */,
 				55BBD585234763AA00C80DED /* SectionZeroCollectionViewCell.xib */,
 			);
 			path = XIBs;
@@ -110,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				55BBD584234763AA00C80DED /* SectionZeroCollectionViewCell.swift */,
+				55ED5B95234B58AE00FBFB32 /* SectionOneCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -117,8 +127,9 @@
 		55BBD5882347745D00C80DED /* Struct */ = {
 			isa = PBXGroup;
 			children = (
-				55BBD589234774C800C80DED /* HealthDataSectionZeroCollectionViewCellSize.swift */,
-				55ED5B8D234B1F3C00FBFB32 /* HealthDataSectionZeroCollectionViewCellData.swift */,
+				55BBD589234774C800C80DED /* HealthDataSectionZeroCellSize.swift */,
+				55ED5B8D234B1F3C00FBFB32 /* HealthDataSectionZeroCellData.swift */,
+				55ED5B9B234B61BE00FBFB32 /* HealthDataSectionOneCellData.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -143,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				55ED5B90234B203C00FBFB32 /* SectionZeroCellMockData.swift */,
+				55ED5B99234B60D300FBFB32 /* SectionOneCellMockData.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -215,6 +227,7 @@
 			files = (
 				55BBD57823471FC400C80DED /* LaunchScreen.storyboard in Resources */,
 				55BBD57523471FC400C80DED /* Assets.xcassets in Resources */,
+				55ED5B98234B58AE00FBFB32 /* SectionOneCollectionViewCell.xib in Resources */,
 				55ED5B8B234B1AC900FBFB32 /* Roboto-Regular.ttf in Resources */,
 				55BBD587234763AA00C80DED /* SectionZeroCollectionViewCell.xib in Resources */,
 				55BBD57323471FC300C80DED /* Main.storyboard in Resources */,
@@ -228,15 +241,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55ED5B9A234B60D300FBFB32 /* SectionOneCellMockData.swift in Sources */,
 				55BBD586234763AA00C80DED /* SectionZeroCollectionViewCell.swift in Sources */,
 				55ED5B91234B203C00FBFB32 /* SectionZeroCellMockData.swift in Sources */,
 				55BBD5812347382700C80DED /* HealthDataViewController.swift in Sources */,
 				55BBD57023471FC300C80DED /* ViewController.swift in Sources */,
-				55ED5B8E234B1F3C00FBFB32 /* HealthDataSectionZeroCollectionViewCellData.swift in Sources */,
+				55ED5B8E234B1F3C00FBFB32 /* HealthDataSectionZeroCellData.swift in Sources */,
 				55BBD56C23471FC300C80DED /* AppDelegate.swift in Sources */,
 				55ED5B94234B227E00FBFB32 /* HealthDataViewModel.swift in Sources */,
-				55BBD58A234774C800C80DED /* HealthDataSectionZeroCollectionViewCellSize.swift in Sources */,
+				55BBD58A234774C800C80DED /* HealthDataSectionZeroCellSize.swift in Sources */,
 				55BBD56E23471FC300C80DED /* SceneDelegate.swift in Sources */,
+				55ED5B9C234B61BE00FBFB32 /* HealthDataSectionOneCellData.swift in Sources */,
+				55ED5B97234B58AE00FBFB32 /* SectionOneCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

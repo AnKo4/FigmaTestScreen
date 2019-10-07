@@ -15,7 +15,7 @@ class SectionZeroCollectionViewCell: UICollectionViewCell {
     
     
     
-    func setupCellContent(data: HealthDataSectionZeroCollectionViewCellData) {
+    func setupCellContent(data: HealthDataSectionZeroCellData) {
         label.text = data.labelText
         background.image = UIImage(named: data.backgroundImage)
     }
