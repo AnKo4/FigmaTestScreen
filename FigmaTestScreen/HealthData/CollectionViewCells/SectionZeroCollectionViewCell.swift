@@ -18,5 +18,8 @@ class SectionZeroCollectionViewCell: UICollectionViewCell {
         label.text = data.labelText
         background.image = UIImage(named: data.backgroundImage)
     }
-
 }
+
+extension SectionZeroCollectionViewCell: Reusable {}
+
+extension SectionZeroCollectionViewCell: NibLoadable {}

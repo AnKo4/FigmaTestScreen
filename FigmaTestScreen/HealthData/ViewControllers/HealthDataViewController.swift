@@ -32,8 +32,8 @@ class HealthDataViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "SectionZeroCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "sectionZeroCell")
-        collectionView.register(UINib(nibName: "SectionOneCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "sectionOneCell")
+        collectionView.register(cellType: SectionZeroCollectionViewCell.self)
+        collectionView.register(cellType: SectionOneCollectionViewCell.self)
      }
     
 }
@@ -54,11 +54,11 @@ extension HealthDataViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
         case 0:
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sectionZeroCell", for: indexPath) as? SectionZeroCollectionViewCell else { return UICollectionViewCell() }
+            let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: SectionZeroCollectionViewCell.self)
             cell.setupCellContent(data: viewModel.sectionZeroData[indexPath.row])
             return cell
         case 1:
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sectionOneCell", for: indexPath) as? SectionOneCollectionViewCell else { return UICollectionViewCell() }
+            let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: SectionOneCollectionViewCell.self)
             cell.setupCellContent(data: viewModel.sectionOneData[indexPath.row])
             return cell
         default: return UICollectionViewCell()

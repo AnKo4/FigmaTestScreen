@@ -19,3 +19,7 @@ class SectionOneCollectionViewCell: UICollectionViewCell {
         label.text = data.labelText
     }
 }
+
+extension SectionOneCollectionViewCell: Reusable {}
+
+extension SectionOneCollectionViewCell: NibLoadable {}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		557329DC234C99AF00F1838F /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557329DA234C99AF00F1838F /* Reusable.swift */; };
+		557329DD234C99AF00F1838F /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557329DB234C99AF00F1838F /* NibLoadable.swift */; };
+		557329DF234C9A4700F1838F /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557329DE234C9A4700F1838F /* UICollectionView+Reusable.swift */; };
 		55BBD56C23471FC300C80DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD56B23471FC300C80DED /* AppDelegate.swift */; };
 		55BBD56E23471FC300C80DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD56D23471FC300C80DED /* SceneDelegate.swift */; };
 		55BBD57323471FC300C80DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BBD57123471FC300C80DED /* Main.storyboard */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		557329DA234C99AF00F1838F /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = "../../../../../Downloads/Reusable-master/Sources/View/Reusable.swift"; sourceTree = "<group>"; };
+		557329DB234C99AF00F1838F /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = "../../../../../Downloads/Reusable-master/Sources/View/NibLoadable.swift"; sourceTree = "<group>"; };
+		557329DE234C9A4700F1838F /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Reusable.swift"; path = "../../../../../Downloads/Reusable-master/Sources/View/UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		55BBD56823471FC300C80DED /* FigmaTestScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FigmaTestScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55BBD56B23471FC300C80DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55BBD56D23471FC300C80DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		557329D8234C994300F1838F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				557329DB234C99AF00F1838F /* NibLoadable.swift */,
+				557329DA234C99AF00F1838F /* Reusable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		557329D9234C995400F1838F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				557329DE234C9A4700F1838F /* UICollectionView+Reusable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		55A1CE83234C5F7B00933E06 /* HealthData */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +114,8 @@
 		55BBD56A23471FC300C80DED /* FigmaTestScreen */ = {
 			isa = PBXGroup;
 			children = (
+				557329D9234C995400F1838F /* Extensions */,
+				557329D8234C994300F1838F /* Protocols */,
 				55A1CE83234C5F7B00933E06 /* HealthData */,
 				55ED5B88234B1A4900FBFB32 /* Resources */,
 				55BBD56B23471FC300C80DED /* AppDelegate.swift */,
@@ -246,16 +271,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557329DC234C99AF00F1838F /* Reusable.swift in Sources */,
 				55ED5B9A234B60D300FBFB32 /* SectionOneCellMockData.swift in Sources */,
 				55BBD586234763AA00C80DED /* SectionZeroCollectionViewCell.swift in Sources */,
 				55ED5B91234B203C00FBFB32 /* SectionZeroCellMockData.swift in Sources */,
 				55BBD5812347382700C80DED /* HealthDataViewController.swift in Sources */,
+				557329DF234C9A4700F1838F /* UICollectionView+Reusable.swift in Sources */,
 				55ED5B8E234B1F3C00FBFB32 /* HealthDataSectionZeroCellData.swift in Sources */,
 				55BBD56C23471FC300C80DED /* AppDelegate.swift in Sources */,
 				55ED5B94234B227E00FBFB32 /* HealthDataViewModel.swift in Sources */,
 				55BBD58A234774C800C80DED /* HealthDataSectionZeroCellSize.swift in Sources */,
 				55BBD56E23471FC300C80DED /* SceneDelegate.swift in Sources */,
 				55ED5B9C234B61BE00FBFB32 /* HealthDataSectionOneCellData.swift in Sources */,
+				557329DD234C99AF00F1838F /* NibLoadable.swift in Sources */,
 				55ED5B97234B58AE00FBFB32 /* SectionOneCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
