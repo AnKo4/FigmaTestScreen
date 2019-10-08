@@ -9,6 +9,6 @@
 import Foundation
 
 struct HealthDataSectionZeroCellData {
-    var labelText = String()
-    var backgroundImage = String()
+    var labelText = ""
+    var backgroundImage = ""
 }

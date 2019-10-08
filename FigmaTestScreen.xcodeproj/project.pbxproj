@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		55BBD56C23471FC300C80DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD56B23471FC300C80DED /* AppDelegate.swift */; };
 		55BBD56E23471FC300C80DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD56D23471FC300C80DED /* SceneDelegate.swift */; };
-		55BBD57023471FC300C80DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD56F23471FC300C80DED /* ViewController.swift */; };
 		55BBD57323471FC300C80DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BBD57123471FC300C80DED /* Main.storyboard */; };
 		55BBD57523471FC400C80DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55BBD57423471FC400C80DED /* Assets.xcassets */; };
 		55BBD57823471FC400C80DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BBD57623471FC400C80DED /* LaunchScreen.storyboard */; };
@@ -31,7 +30,6 @@
 		55BBD56823471FC300C80DED /* FigmaTestScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FigmaTestScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55BBD56B23471FC300C80DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55BBD56D23471FC300C80DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55BBD56F23471FC300C80DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55BBD57223471FC300C80DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55BBD57423471FC400C80DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55BBD57723471FC400C80DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +59,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55A1CE83234C5F7B00933E06 /* HealthData */ = {
+			isa = PBXGroup;
+			children = (
+				55BBD57F234737FF00C80DED /* ViewControllers */,
+				55BBD5822347637100C80DED /* XIBs */,
+				55BBD5832347637C00C80DED /* CollectionViewCells */,
+				55BBD5882347745D00C80DED /* Struct */,
+				55ED5B8F234B200700FBFB32 /* Mock */,
+				55ED5B92234B225900FBFB32 /* ViewModels */,
+			);
+			path = HealthData;
+			sourceTree = "<group>";
+		};
 		55BBD55F23471FC300C80DED = {
 			isa = PBXGroup;
 			children = (
@@ -80,16 +91,10 @@
 		55BBD56A23471FC300C80DED /* FigmaTestScreen */ = {
 			isa = PBXGroup;
 			children = (
-				55ED5B92234B225900FBFB32 /* ViewModels */,
-				55ED5B8F234B200700FBFB32 /* Mock */,
+				55A1CE83234C5F7B00933E06 /* HealthData */,
 				55ED5B88234B1A4900FBFB32 /* Resources */,
-				55BBD5882347745D00C80DED /* Struct */,
-				55BBD5832347637C00C80DED /* CollectionViewCells */,
-				55BBD5822347637100C80DED /* XIBs */,
-				55BBD57F234737FF00C80DED /* ViewControllers */,
 				55BBD56B23471FC300C80DED /* AppDelegate.swift */,
 				55BBD56D23471FC300C80DED /* SceneDelegate.swift */,
-				55BBD56F23471FC300C80DED /* ViewController.swift */,
 				55BBD57123471FC300C80DED /* Main.storyboard */,
 				55BBD57423471FC400C80DED /* Assets.xcassets */,
 				55BBD57623471FC400C80DED /* LaunchScreen.storyboard */,
@@ -245,7 +250,6 @@
 				55BBD586234763AA00C80DED /* SectionZeroCollectionViewCell.swift in Sources */,
 				55ED5B91234B203C00FBFB32 /* SectionZeroCellMockData.swift in Sources */,
 				55BBD5812347382700C80DED /* HealthDataViewController.swift in Sources */,
-				55BBD57023471FC300C80DED /* ViewController.swift in Sources */,
 				55ED5B8E234B1F3C00FBFB32 /* HealthDataSectionZeroCellData.swift in Sources */,
 				55BBD56C23471FC300C80DED /* AppDelegate.swift in Sources */,
 				55ED5B94234B227E00FBFB32 /* HealthDataViewModel.swift in Sources */,

@@ -14,7 +14,7 @@ struct SectionZeroCellMockData {
                 2: HealthDataSectionZeroCellData(labelText: "Nutrition", backgroundImage: "bg_nutrition"),
                 3: HealthDataSectionZeroCellData(labelText: "Sleep", backgroundImage: "bg_sleep")]
     
-    var data = [HealthDataSectionZeroCellData]()
+    var data: [HealthDataSectionZeroCellData] = []
     
     init() {
         for key in dict.keys {

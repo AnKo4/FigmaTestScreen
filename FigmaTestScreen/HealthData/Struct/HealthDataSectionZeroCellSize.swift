@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 struct HealthDataSectionZeroCellImageSize {
-    let width = CGFloat(176)
-    let height = CGFloat(165)
+    static let width: CGFloat = 176
+    static let height: CGFloat = 165
  }

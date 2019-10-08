@@ -16,8 +16,8 @@ class HealthDataViewController: UIViewController {
     let viewModel = HealthDataViewModel()
     
     let edgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-    let interitemSpacing = CGFloat(8)
-    let lineSpacing = CGFloat(8)
+    let interitemSpacing: CGFloat = 8
+    let lineSpacing: CGFloat = 8
     
     
     override func viewDidLoad() {
@@ -36,11 +36,6 @@ class HealthDataViewController: UIViewController {
         collectionView.register(UINib(nibName: "SectionOneCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "sectionOneCell")
      }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        let indexSet = IndexSet(integer: 0)
-//        collectionView.reloadSections(indexSet)
-//    }
-    
 }
 
 extension HealthDataViewController: UICollectionViewDataSource {
@@ -50,8 +45,8 @@ extension HealthDataViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
-        case 0: return 4
-        case 1: return 20
+        case 0: return viewModel.sectionZeroData.count
+        case 1: return viewModel.sectionOneData.count
         default: return 0
         }
     }
@@ -75,7 +70,7 @@ extension HealthDataViewController: UICollectionViewDataSource {
 
 extension HealthDataViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let imageSize = HealthDataSectionZeroCellImageSize()
+        let imageSize = HealthDataSectionZeroCellImageSize.self
         let aspectRatio = imageSize.height / imageSize.width
         switch indexPath.section {
         case 0: return CGSize(width: (UIScreen.main.bounds.width - edgeInsets.left - edgeInsets.right - interitemSpacing) / 2 , height: ((UIScreen.main.bounds.width - edgeInsets.left - edgeInsets.right - interitemSpacing) / 2) * aspectRatio)
@@ -96,11 +91,6 @@ extension HealthDataViewController: UICollectionViewDelegateFlowLayout {
 
     }
     
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return interitemSpacing
-    }
-
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return lineSpacing
     }

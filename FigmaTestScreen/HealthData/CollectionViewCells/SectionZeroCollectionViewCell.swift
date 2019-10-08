@@ -12,8 +12,7 @@ class SectionZeroCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet private weak var label: UILabel!
     @IBOutlet private weak var background: UIImageView!
-    
-    
+
     
     func setupCellContent(data: HealthDataSectionZeroCellData) {
         label.text = data.labelText
